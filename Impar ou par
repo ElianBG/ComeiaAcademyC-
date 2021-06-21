@@ -1,0 +1,23 @@
+using System;
+
+namespace ConsoleApp8 {
+    class Program {
+        static void Main(string[] args) {
+            int par = 0, impar = 0, aux = 0;
+            Random numx = new Random();  
+            for (int x = 0; x <= 99 ; x++) {
+                aux = numx.Next();
+                if (aux % 2 == 0) {
+                    par++;
+                }
+                else {
+                    impar++;
+                }
+       
+            }
+            Console.WriteLine("A quantidade de números pares são: " + par);
+            Console.WriteLine("A quantidade de números ímpares são: " + impar);
+            
+        }
+    }
+}
