@@ -1,0 +1,21 @@
+using System;
+using System.Globalization;
+
+namespace Funções {
+    class Program {
+        static void Main(string[] args) {
+            double raio;
+            Console.WriteLine("Qual o valor do raio do círculo?");
+            raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double resultado = Area(raio);
+            Console.WriteLine("A área do círculo é: " + resultado.ToString("F4", CultureInfo.InvariantCulture));
+        }
+
+
+        static double Area(double r) {
+            double area;
+            area = r * r * 3.14;
+            return area;
+        }
+    }
+}
